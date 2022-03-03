@@ -1,0 +1,124 @@
+/* color palettes
+#E6E6E6 gray (background color)
+#14279B dark blue (style)
+#5C7AEA pale blue (seleccions)
+
+#007cba
+#8b8d94
+#f7f7f7
+#100b70 letters
+#1ebbf0 hover letters
+footer #100b70 
+*/
+
+html {
+    font-size: 10px;
+    font-family: Arial, sans-serif;
+  }
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 2.5rem;
+    color: #333;
+    margin: 1rem;
+    background: #E6E6E6;
+    background-image: url("https://scontent-qro1-2.xx.fbcdn.net/v/t1.6435-9/29214825_1807013832683820_300024051403849728_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=730e14&_nc_eui2=AeEpXDFbxxShX73AiYv3jYkW1hnQoPib0HTWGdCg-JvQdFbwanIULVSlrhZxpE-mrEafHfsObw9zMESD473TMrNj&_nc_ohc=quWWXzyLHjIAX-j1-EI&tn=-INFnM2OSSZCYQsc&_nc_ht=scontent-qro1-2.xx&oh=eaea733ed6ffc059ccb877e577e9f0de&oe=61A7768E");
+}
+
+
+#main-header{
+    padding: 1em;
+    height: 5%;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+  }
+  
+.container img {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    height: auto;
+}
+
+.encuesta{
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}
+
+#gform{
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}
+
+/*Nav bar Css*/
+/* [ON BIG SCREEN] */
+/* (A) WRAPPER */
+#hamnav {
+    width: 100%;
+    background: white;
+  }
+  
+  /* (B) HORIZONTAL MENU ITEMS */
+  #hamitems { display: flex; }
+  #hamitems a {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 10px;
+    color: #14279B;
+    text-decoration: none;
+    text-align: center;
+  }
+  #hamitems a:hover { background: #5C7AEA; }
+  
+  /* (C) HIDE HAMBURGER */
+  #hamnav label, #hamburger { display: none; }
+
+/* [ON SMALL SCREENS] */
+@media screen and (max-width: 768px){
+    /* (A) BREAK INTO VERTICAL MENU */
+    #hamitems a {
+      box-sizing: border-box;
+      display: block;
+      width: 100%;
+      border-top: 1px solid white;
+    }
+   
+    /* (B) SHOW HAMBURGER ICON */
+    #hamnav label { 
+      display: inline-block; 
+      color: #14279B;
+      background: white;
+      font-style: normal;
+      font-size: 1.7em;
+      padding: 10px;
+    }
+  
+    /* (C) TOGGLE SHOW/HIDE MENU */
+    #hamitems { display: none; }
+    #hamnav input:checked ~ #hamitems { display: block; }
+  }
+
+  #hamnav {
+    position: sticky;
+    top: 0;
+  }
+
+
+/*
+Footer
+*/
+
+#footer{
+    background-color:#100b70;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    border: 0px 0px 0px 0px;
+}
+
+
